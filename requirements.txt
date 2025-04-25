@@ -1,0 +1,63 @@
+
+Requirements Analysis Document
+
+This is for a desktop application that allows users to log incidents with details such as location, type of emergency, priority level and required resources. The application also enables users to manage a collection of resources and implements an algorithm that assigns resources to incidents based on priority level, and resource availability levels.
+
+
+ Stakeholders:
+
+Primary Users:
+Emergency coordinators or dispatch officers responsible for managing incidents and resources.
+
+Secondary Stakeholders:
+Emergency response teams (ambulance, fire truck, medical teams).
+Residents requiring assistance during emergencies
+
+ Functional Requirements
+
+    Users must be able to log a new incident with:
+Location (e.g., Zone 1, Zone 2, etc.)
+ Type of emergency (e.g., fire, medical emergency)
+Priority level (High, Medium, Low)
+Required resources (e.g., ambulance, fire truck)
+
+    2.           Manage Resources
+Users must be able to add and manage resources, recording:
+ Resource ID (e.g., AMB001)
+Type of resource (e.g., ambulance, fire truck)
+Current location
+ Availability status
+
+  3.            Resource Allocation
+The system must:
+Allocate resources to incidents based on priority and availability.
+Reallocate resources dynamically if a higher-priority incident is logged.
+Update the incident status upon successful resource assignment.
+
+
+4. Console-Based User Interface
+The system must provide:
+Menu-driven text interface.
+Clear prompts for entering incidents and resources.
+Structured display of incidents and resource statuses.
+
+5. Resource Redistribution  due to changing priorities
+
+6. Error Handling and Validation
+  
+ Non-Functional Requirements
+
+Scalability: Code should allow easy addition of new resource types or incident categories.
+Maintainability: code must  adhere to OOP principles 
+Usability:   Interface should be simple and user friendly
+
+ Definition of Done
+
+- Users can successfully log incidents and resources.
+- Resources are allocated automatically to the highest-priority incidents first.
+- Reallocation occurs dynamically when new urgent incidents are added based on priority.
+- All errors are handled and logged with clear messages written back to the end user
+
+To Conclude
+
+The requirements analysis phase has laid out the foundation for a structured, OOP-based implementation. In this application, I will be applying  key OOP concepts including classes, objects, encapsulation, and abstraction. These will help me achieve modularity and align with the Single Responsibility and Open-Closed principles. Each class in the application will have a single clear purpose. 
